@@ -3,9 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Assignment 5</title>
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- daisy ui and tailwind cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
 </head>
-<body>
-    
+<body class="max-w-[1920px] mx-auto border-2 border-e-red-400">
+    <header class="">
+        <div class="mr-6 ml-6 flex justify-between items-center p-4">
+            <!-- left -->
+            <div class="flex gap-2 ">
+                <img class="h-[50px]" src="./assets/logo.png" alt="">
+                <div>
+                    <h1 class="font-extrabold text-2xl leading-6 text-[#006747]">Emergency <br>Service</h1>
+                </div> 
+            </div>
+            <!-- right -->
+            <div class="flex gap-5">
+                <div class="flex justify-center items-center bg-[#41ff6b1a] w-[120px]  gap-2 p-3 rounded-full">
+                    <span>0</span>
+                    <img class="h-[30px]" src="./assets/heart.png" alt="">
+                </div>
+                <div class="flex justify-center items-center bg-[#41ff6b1a] w-[120px]  gap-2 p-3 rounded-full">
+                    <span>0</span>
+                    <img class="h-[30px]" src="./assets/coin.png" alt="">
+                </div>
+                <div class="flex justify-center items-center bg-[#00A63E] w-[120px]  gap-2 p-3 rounded-full">
+                    <h1 class="text-white"><span>2</span> Copy</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- banner -->
+        <div class="flex flex-col justify-center items-center gap-3 text-center text-white  bg-green-400 h-[239px] bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] ">
+            <figure>
+                <img src="./assets/logo-dark.png" alt="" class="h-[90px]">
+            </figure>
+            <div>
+                <h2 class="text-5xl font-bold mb-3">Emergency Service Directory</h2>
+                <p class="text-xl font-semibold">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
+            </div>
+        </div>
+        <!-- services section -->
+        <section class="grid grid-cols-12 w-11/12 mx-auto bg-[#f5fff6]">
+            <!-- cards -->
+            <div class="col-span-9 bg-green-300">
+                <!-- card -->
+                <div class="w-96">
+                    <div class="flex justify-between items-center border-2">
+                        <img class="h-[32px]" src="./assets/emergency.png" alt="">
+                        <h2 class="text-2xl"><i class="fa-regular fa-heart "></i></h2>
+                    </div>
+                    <h2>National Emergency Number</h2>
+                    <p>National Emergency</p>
+                    <h2>999</h2>
+                    <button>ALL</button>
+                    
+                </div>
+            </div>
+            <!-- history -->
+            <aside class="col-span-3 bg-pink-400">
+                <h2>history</h2>
+            </aside>
+
+        </section>
+    </main>
+
 </body>
 </html>
