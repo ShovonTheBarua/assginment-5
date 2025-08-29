@@ -25,11 +25,11 @@
             <!-- right -->
             <div class="flex gap-5">
                 <div class="flex justify-center items-center bg-[#41ff6b1a] w-[120px]  gap-2 p-3 rounded-full">
-                    <span>0</span>
+                    <span id="red-heart">0</span>
                     <img class="h-[30px]" src="./assets/heart.png" alt="">
                 </div>
                 <div class="flex justify-center items-center bg-[#41ff6b1a] w-[120px]  gap-2 p-3 rounded-full">
-                    <span>0</span>
+                    <span id="coin">100</span>
                     <img class="h-[30px]" src="./assets/coin.png" alt="">
                 </div>
                 <div class="flex justify-center items-center bg-[#00A63E] w-[120px]  gap-2 p-3 rounded-full">
@@ -53,7 +53,7 @@
         <div class="bg-[#f5fff6] ">
             <section class="pt-8 grid grid-cols-12 gap-8  w-11/12 mx-auto pb-8">
                 <!-- cards -->
-                <section class="col-span-9 ">
+                <section id="cards-container" class="col-span-9 ">
                     <div class="grid grid-cols-3 gap-7" >
                         <!-- card -->
                         <div class="bg-white rounded-xl shadow-sm">
@@ -62,7 +62,7 @@
                                     <div class="p-4 bg-[#ffe3e2] rounded-xl">
                                         <img class="h-[32px]" src="./assets/emergency.png" alt="">
                                     </div>
-                                    <h2 class="text-2xl"><i class="fa-regular fa-heart "></i></h2>
+                                    <h2 class="text-2xl "><i class="fa-regular fa-heart heart-icon"></i></h2>
                                 </div>
                                 <h2 class="text-2xl font-bold">National Emergency Number</h2>
                                 <p class="text-xl text-gray-500">National Emergency</p>
@@ -70,7 +70,7 @@
                                 <div class="badge badge-ghost bg-[#f2f2f2] ">All</div>
                                 <div class="flex justify-center mt-6 gap-3">
                                     <button class="btn w-[40%] rounded-xl"><i class="fa-regular fa-copy"></i>Copy</button>
-                                    <button class="btn w-[40%] rounded-xl bg-[#00a63e] text-white"><i class="fa-solid fa-phone "></i>Call</button>
+                                    <button class="make-call btn w-[40%] rounded-xl bg-[#00a63e] text-white"><i class="fa-solid fa-phone "></i>Call</button>
                                 </div>
                             </div>
                             
@@ -81,7 +81,7 @@
                                     <div class="p-4 bg-[#dfefff] rounded-xl">
                                         <img class="h-[32px]" src="./assets/police.png" alt="">
                                     </div>
-                                    <h2 class="text-2xl"><i class="fa-regular fa-heart "></i></h2>
+                                    <h2 class="text-2xl"><i class="fa-regular fa-heart heart-icon"></i></h2>
                                 </div>
                                 <h2 class="text-2xl font-bold">Police Helpline Number</h2>
                                 <p class="text-xl text-gray-500">Police</p>
@@ -89,7 +89,7 @@
                                 <div class="badge badge-ghost bg-[#f2f2f2] ">Police</div>
                                 <div class="flex justify-center mt-6 gap-3">
                                     <button class="btn w-[40%] rounded-xl"><i class="fa-regular fa-copy"></i>Copy</button>
-                                    <button class="btn w-[40%] rounded-xl bg-[#00a63e] text-white"><i class="fa-solid fa-phone "></i>Call</button>
+                                    <button class="make-call btn w-[40%] rounded-xl bg-[#00a63e] text-white"><i class="fa-solid fa-phone "></i>Call</button>
                                 </div>
                             </div>
                             
@@ -100,7 +100,7 @@
                                     <div class="p-4 bg-[#ffe3e2] rounded-xl">
                                         <img class="h-[32px]" src="./assets/fire-service.png" alt="">
                                     </div>
-                                    <h2 class="text-2xl"><i class="fa-regular fa-heart "></i></h2>
+                                    <h2 class="text-2xl"><i class="fa-regular fa-heart heart-icon"></i></h2>
                                 </div>
                                 <h2 class="text-2xl font-bold">Fire Service Number</h2>
                                 <p class="text-xl text-gray-500">Fire Service</p>
@@ -108,7 +108,7 @@
                                 <div class="badge badge-ghost bg-[#f2f2f2] ">Fire</div>
                                 <div class="flex justify-center mt-6 gap-3">
                                     <button class="btn w-[40%] rounded-xl"><i class="fa-regular fa-copy"></i>Copy</button>
-                                    <button class="btn w-[40%] rounded-xl bg-[#00a63e] text-white"><i class="fa-solid fa-phone "></i>Call</button>
+                                    <button class="make-call btn w-[40%] rounded-xl bg-[#00a63e] text-white"><i class="fa-solid fa-phone "></i>Call</button>
                                 </div>
                             </div>
                             
@@ -119,7 +119,7 @@
                                     <div class="p-4 bg-[#ffe3e2] rounded-xl">
                                         <img class="h-[32px]" src="./assets/ambulance.png" alt="">
                                     </div>
-                                    <h2 class="text-2xl"><i class="fa-regular fa-heart "></i></h2>
+                                    <h2 class="text-2xl"><i class="fa-regular fa-heart heart-icon"></i></h2>
                                 </div>
                                 <h2 class="text-2xl font-bold">Ambulance Service</h2>
                                 <p class="text-xl text-gray-500">Ambulance</p>
@@ -127,7 +127,7 @@
                                 <div class="badge badge-ghost bg-[#f2f2f2] ">Health</div>
                                 <div class="flex justify-center mt-6 gap-3">
                                     <button class="btn w-[40%] rounded-xl"><i class="fa-regular fa-copy"></i>Copy</button>
-                                    <button class="btn w-[40%] rounded-xl bg-[#00a63e] text-white"><i class="fa-solid fa-phone "></i>Call</button>
+                                    <button class="make-call btn w-[40%] rounded-xl bg-[#00a63e] text-white"><i class="fa-solid fa-phone "></i>Call</button>
                                 </div>
                             </div>
                             
@@ -138,7 +138,7 @@
                                     <div class="p-4 bg-[#ffe3e2] rounded-xl">
                                         <img class="h-[32px]" src="./assets/emergency.png" alt="">
                                     </div>
-                                    <h2 class="text-2xl"><i class="fa-regular fa-heart "></i></h2>
+                                    <h2 class="text-2xl"><i class="fa-regular fa-heart heart-icon"></i></h2>
                                 </div>
                                 <h2 class="text-2xl font-bold">Women & Child Helpline</h2>
                                 <p class="text-xl text-gray-500">Women & Child Helpline</p>
@@ -146,7 +146,7 @@
                                 <div class="badge badge-ghost bg-[#f2f2f2] ">Help</div>
                                 <div class="flex justify-center mt-6 gap-3">
                                     <button class="btn w-[40%] rounded-xl"><i class="fa-regular fa-copy"></i>Copy</button>
-                                    <button class="btn w-[40%] rounded-xl bg-[#00a63e] text-white"><i class="fa-solid fa-phone "></i>Call</button>
+                                    <button class="make-call btn w-[40%] rounded-xl bg-[#00a63e] text-white"><i class="fa-solid fa-phone "></i>Call</button>
                                 </div>
                             </div>
                             
@@ -157,7 +157,7 @@
                                     <div class="p-4 bg-[#ffe3e2] rounded-xl">
                                         <img class="h-[32px]" src="./assets/emergency.png" alt="">
                                     </div>
-                                    <h2 class="text-2xl"><i class="fa-regular fa-heart "></i></h2>
+                                    <h2 class="text-2xl"><i class="fa-regular fa-heart heart-icon"></i></h2>
                                 </div>
                                 <h2 class="text-2xl font-bold">Anti-Corruption Helpline</h2>
                                 <p class="text-xl text-gray-500">Anti-Corruption </p>
@@ -165,7 +165,7 @@
                                 <div class="badge badge-ghost bg-[#f2f2f2] ">Govt</div>
                                 <div class="flex justify-center mt-6 gap-3">
                                     <button class="btn w-[40%] rounded-xl"><i class="fa-regular fa-copy"></i>Copy</button>
-                                    <button class="btn w-[40%] rounded-xl bg-[#00a63e] text-white"><i class="fa-solid fa-phone "></i>Call</button>
+                                    <button class="make-call btn w-[40%] rounded-xl bg-[#00a63e] text-white"><i class="fa-solid fa-phone "></i>Call</button>
                                 </div>
                             </div>
                             
@@ -176,7 +176,7 @@
                                     <div class="p-4 bg-[#ffe3e2] rounded-xl">
                                         <img class="h-[32px]" src="./assets/emergency.png" alt="">
                                     </div>
-                                    <h2 class="text-2xl"><i class="fa-regular fa-heart "></i></h2>
+                                    <h2 class="text-2xl"><i class="fa-regular fa-heart heart-icon"></i></h2>
                                 </div>
                                 <h2 class="text-2xl font-bold">Electricity Helpline</h2>
                                 <p class="text-xl text-gray-500">Electricity Outage</p>
@@ -184,7 +184,7 @@
                                 <div class="badge badge-ghost bg-[#f2f2f2] ">Electricity</div>
                                 <div class="flex justify-center mt-6 gap-3">
                                     <button class="btn w-[40%] rounded-xl"><i class="fa-regular fa-copy"></i>Copy</button>
-                                    <button class="btn w-[40%] rounded-xl bg-[#00a63e] text-white"><i class="fa-solid fa-phone "></i>Call</button>
+                                    <button class="make-call btn w-[40%] rounded-xl bg-[#00a63e] text-white"><i class="fa-solid fa-phone "></i>Call</button>
                                 </div>
                             </div>
                             
@@ -195,7 +195,7 @@
                                     <div class="p-4 bg-[#ffe3e2] rounded-xl">
                                         <img class="h-[32px]" src="./assets/emergency.png" alt="">
                                     </div>
-                                    <h2 class="text-2xl"><i class="fa-regular fa-heart "></i></h2>
+                                    <h2 class="text-2xl"><i class="fa-regular fa-heart heart-icon"></i></h2>
                                 </div>
                                 <h2 class="text-2xl font-bold">Brac Helpline</h2>
                                 <p class="text-xl text-gray-500">Brac </p>
@@ -203,7 +203,7 @@
                                 <div class="badge badge-ghost bg-[#f2f2f2] ">NGO</div>
                                 <div class="flex justify-center mt-6 gap-3">
                                     <button class="btn w-[40%] rounded-xl"><i class="fa-regular fa-copy"></i>Copy</button>
-                                    <button class="btn w-[40%] rounded-xl bg-[#00a63e] text-white"><i class="fa-solid fa-phone "></i>Call</button>
+                                    <button class="make-call btn w-[40%] rounded-xl bg-[#00a63e] text-white"><i class="fa-solid fa-phone "></i>Call</button>
                                 </div>
                             </div>
                             
@@ -214,7 +214,7 @@
                                     <div class="p-4 bg-[#ffe3e2] rounded-xl">
                                         <img class="h-[32px]" src="./assets/emergency.png" alt="">
                                     </div>
-                                    <h2 class="text-2xl"><i class="fa-regular fa-heart "></i></h2>
+                                    <h2 class="text-2xl"><i class="fa-regular fa-heart heart-icon"></i></h2>
                                 </div>
                                 <h2 class="text-2xl font-bold">Bangladesh Railway Helpline </h2>
                                 <p class="text-xl text-gray-500">Bangladesh Railway</p>
@@ -222,7 +222,7 @@
                                 <div class="badge badge-ghost bg-[#f2f2f2] ">Travel</div>
                                 <div class="flex justify-center mt-6 gap-3">
                                     <button class="btn w-[40%] rounded-xl"><i class="fa-regular fa-copy"></i>Copy</button>
-                                    <button class="btn w-[40%] rounded-xl bg-[#00a63e] text-white"><i class="fa-solid fa-phone "></i>Call</button>
+                                    <button class="make-call btn w-[40%] rounded-xl bg-[#00a63e] text-white "><i class="fa-solid fa-phone "></i>Call</button>
                                 </div>
                             </div>
                             
@@ -235,24 +235,18 @@
                     <div class="p-6">
                         <div class="flex justify-between items-center">
                             <h1 class="text-xl font-semibold"><i class="fa-regular fa-clock text-gray-500"></i> Call History</h1>
-                            <button class="btn w-[30%]  rounded-3xl bg-[#00a63e] text-white">Clear</button>
+                            <button id="clear-btn" class="btn w-[30%]  rounded-3xl bg-[#00a63e] text-white">Clear</button>
                         </div>
                         <!-- call history container -->
-                        <div>
+                        <div id="call-history-container">
 
-                            <div class="mt-5 p-4 rounded-lg flex justify-between items-center bg-[#f1efef]">
-                                <div>
-                                    <h1 class="font-semibold text-[18px]">Fire Service Number</h1>
-                                    <p class="text-gray-500">999</p>
-                                </div>
-                                <span>11:36:58 AM</span>
-                            </div>
+                            
                         </div>
                     </div>
                 </aside>
             </section>
         </div>
     </main>
-
+    <script src="./js/index.js"></script>
 </body>
 </html>
