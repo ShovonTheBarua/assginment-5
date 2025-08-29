@@ -4,6 +4,15 @@ function getElement(id){
 }
 
 getElement('cards-container').addEventListener('click', function(e){
+    if(e.target.className.includes('copy')){
+        const copyNumber = getElement('copy-btn').innerText
+        const currentCopy = Number(copyNumber) + 1
+        getElement('copy-btn').innerText = currentCopy;
+        const serviceNumber = e.target.parentNode.parentNode.children[3].innerText
+        alert(`number copied: ${serviceNumber}`)
+        
+    }
+
    if(e.target.className.includes('heart-icon')){
     const redHeart = getElement('red-heart').innerText
     const  currentHeart = Number(redHeart) + 1;
