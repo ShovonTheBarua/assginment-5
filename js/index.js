@@ -24,6 +24,12 @@ getElement('cards-container').addEventListener('click', function(e){
     const currentCoin = Number(coin) - 20 ;
     
     getElement('coin').innerText = currentCoin
+    // const coinNumber = Number(getElement('coin'))
+    if(currentCoin < 0){
+        getElement('coin').innerText = 0
+        return alert('You do not have enough coin')
+    }
+    
     
     alert(`calling ${serviceName} ${serviceNumber}...`)
     console.log(serviceNumber)
@@ -55,3 +61,4 @@ getElement('cards-container').addEventListener('click', function(e){
 getElement('clear-btn').addEventListener('click', function(){
     getElement('call-history-container').innerHTML = ""
 })
+
